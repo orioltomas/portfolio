@@ -1,0 +1,72 @@
+{% extends 'layout.html.twig' %}
+
+{% block section %}CW BACKEND{% endblock %}
+
+{% block content %}
+
+    <div class="col-12" style="margin-top: 10px">
+        <form class="row" action="{{ path('cw-backend-edit', {'id': element._id}) }}" method="post">
+            <div class="form-group col-6">
+                <label>ID</label>
+                <input disabled class="form-control" name="id" value="{{ element._id }}" />
+            </div>
+
+            <div class="form-group col-3">
+                <label>Published at</label>
+                <input class="form-control" name="publishedAt" value="{{ element.publishedAt }}" />
+            </div>
+
+            <div class="form-group col-3">
+                <label>Active</label>
+                <input type="checkbox" class="form-control" name="isActive" value="" {% if element.isActive == 1 %}checked{% endif %} />
+            </div>
+
+            <div class="form-group col-6">
+                <label>Content</label>
+                <textarea rows="5" class="form-control" name="content">{{ element.content }}</textarea>
+            </div>
+
+            <div class="form-group col-6">
+                <label>Description</label>
+                <textarea rows="5" class="form-control" name="description">{{ element.description }}</textarea>
+            </div>
+
+            <div class="form-group col-6">
+                <label>Url to image</label>
+                <input class="form-control" name="urlToImage" value="{{ element.urlToImage }}" />
+            </div>
+
+            <div class="form-group col-3">
+                <label>Category</label>
+                <input class="form-control" name="category" value="{{ element.category }}" />
+            </div>
+
+            <div class="form-group col-3">
+                <label>Author</label>
+                <input class="form-control" name="author" value="{{ element.author }}" />
+            </div>
+
+            <div class="form-group col-3">
+                <label>Latitude</label>
+                <input class="form-control" name="latitude" value="{{ element.latitude }}" />
+            </div>
+
+            <div class="form-group col-3">
+                <label>Longitude</label>
+                <input class="form-control" name="longitude" value="{{ element.longitude }}" />
+            </div>
+
+            {#<div class="form-group">
+                <label>Tags</label>
+                <input class="form-control" name="tags" value="{{ element.tags }}" />
+            </div>#}
+
+            <div class="form-group col-3" style="margin-top: auto">
+                <button type="submit" class="form-control btn btn-primary">
+                    <span class="material-icons">check</span><span style="vertical-align: top">SEND</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

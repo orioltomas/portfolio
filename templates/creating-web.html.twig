@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block section %}CREATING-WEB{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="offset-3 col-3 text-center" style="margin-top: 10px">
+            <a href="{{ path('cw-backend') }}"><button type="button" class="btn btn-primary">BACKEND</button></a>
+        </div>
+
+        <div class="col-3 text-center" style="margin-top: 10px">
+            <a href="{{ path('cw-frontend') }}"><button type="button" class="btn btn-primary">FRONTEND</button></a>
+        </div>
+    </div>
+
+{% endblock %}

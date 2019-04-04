@@ -1,0 +1,39 @@
+{% extends 'layout.html.twig' %}
+
+{% block section %}CW BACKEND{% endblock %}
+
+{% block content %}
+
+    <div class="col-12" style="margin-top: 10px">
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>Content</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Active</th>
+                <th>Actions</th>
+            </tr>
+
+            {% for row in content_list %}
+                <tr>
+                    <td>{{ row._id }}</td>
+                    <td>{{ row.content }}</td>
+                    <td>{{ row.author }}</td>
+                    <td>{{ row.category }}</td>
+                    <td class="text-center">
+                        {% if row.isActive == 1 %}
+                            <span class="material-icons">check_box</span>
+                        {% else %}
+                            <span class="material-icons">check_box_outline_blank</span>
+                        {% endif %}
+                    </td>
+                    <td class="text-center">
+                        <a href="{{ path('cw-backend-edit', {'id': row._id}) }}"><span class="material-icons">edit</span></a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+{% endblock %}
