@@ -1,3 +1,35 @@
+header {
+    width: 100%;
+}
+
+.navbar-menu {
+    height: 85px;
+    width: 100%;
+
+    h1 {
+        display: inline-flex;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .right-menu {
+        display: none;
+        float: right;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(lg) {
+            display: inline-flex;
+        }
+        li a {
+            color: black;
+            margin: 0 15px;
+        }
+        li a:hover {
+            text-decoration: none;
+            filter: drop-shadow(0.5px 0.5px 1px black);
+        }
+    }
+}
+
 #sidebar {
     padding-top: 25px;
     margin-right: -200px;
@@ -21,7 +53,7 @@
     z-index: 1000;
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 50px;
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -49,7 +81,7 @@
 }
 
 #sidebarCollapse.active {
-    right: 215px;
+    right: 225px;
 }
 
 #sidebarCollapse.active span:first-of-type {
@@ -85,5 +117,6 @@
 
 #sidebar li a:hover {
     text-decoration: none;
-    font-size: large;
+    letter-spacing: 1px;
+    filter: drop-shadow(0.5px 0.5px 1px white);
 }

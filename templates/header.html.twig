@@ -1,0 +1,41 @@
+{% block header %}
+
+    <header>
+        <nav id="sidebar">
+
+            <ul class="list-unstyled components">
+                <li><a href="{{ path('symfony') }}">Home</a></li>
+                <li><a href="{{ path('symfony') }}">Portfolio</a></li>
+                <li><a href="{{ path('symfony') }}">Experience</a></li>
+                <li><a href="{{ path('symfony') }}">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <table class="navbar-menu">
+                <tbody>
+                <tr>
+                    <td class="align-middle">
+                        <h1>Oriol Tomàs Fortuny</h1>
+                    </td>
+                    <td class="align-middle">
+                        <ul class="list-unstyled flex right-menu">
+                            <li><a href="{{ path('symfony') }}">Home</a></li>
+                            <li><a href="{{ path('symfony') }}">Portfolio</a></li>
+                            <li><a href="{{ path('symfony') }}">Experience</a></li>
+                            <li><a href="{{ path('symfony') }}">About</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button type="button" id="sidebarCollapse" class="navbar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+{% endblock %}
