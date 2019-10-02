@@ -29,6 +29,10 @@
     border: 2px solid white;
     background-color: #1f2121;
     transition: all 0.6s;
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
 }
 
 #sidebarCollapse:focus {
