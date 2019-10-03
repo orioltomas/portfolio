@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 {% use 'header.html.twig' with header as layout_header %}
+{% use 'footer.html.twig' with footer as layout_footer %}
 
 {% block body %}
 
@@ -8,18 +9,14 @@
     {% endblock %}
 
     <div class="wrapper">
-
         <div id="content">
-
-            <div id="columns-container" class="col-12">
-                <div class="section col-12">
-                    <h5>{% block section %}{% endblock %}</h5>
-                </div>
-
-                {% block content %}{% endblock %}
-            </div>
+            {% block content %}{% endblock %}
         </div>
     </div>
+
+    {% block footer %}
+        {{ block('layout_footer') }}
+    {% endblock %}
 {% endblock %}
 
 {% block javascripts %}

@@ -1,0 +1,75 @@
+.home {
+  &__img {
+    position: relative;
+    top: 0;
+    z-index: 300;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/home_mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+    @include media-breakpoint-up(md) {
+      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/home_desktop.jpg');
+    }
+  }
+  &__center-img {
+    transform: translateY(20vh);
+
+    @include media-breakpoint-up(md) {
+      transform: translateY(35vh);
+    }
+    &__headline {
+      font-size: 45px;
+      font-weight: lighter;
+      color: white;
+      margin-bottom: 25px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 50px;
+      }
+    }
+    &__button {
+      color: white;
+      padding: 15px 75px;
+      background: transparent;
+      border: 1px solid white;
+      border-radius: 5px;
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      transition: all 0.75s linear;
+
+      @include media-breakpoint-up(sm) {
+        margin: 0 20px;
+      }
+      @include media-breakpoint-up(md) {
+        margin: 0 30px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin: 0 40px;
+      }
+    }
+    &__button:hover {
+      color: $gray-color;
+      background: rgba(white, 0.75);
+    }
+  }
+  &__bottom-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    &__img {
+      height: 90px;
+      width: 90px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 15px;
+      border: 2px solid white;
+      border-radius: 50%;
+      background-image: url('../images/oriol_tomas.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
