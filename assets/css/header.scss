@@ -4,11 +4,11 @@ header {
   .navbar-menu {
     position: absolute;
     top: 0;
-    height: 75px;
+    height: $header-mobile-height;
     width: 100%;
 
     @include media-breakpoint-up(sm) {
-      height: 120px;
+      height: $header-desktop-height;
     }
 
     h1 {
@@ -161,5 +161,15 @@ header {
     text-decoration: none;
     letter-spacing: 1px;
     filter: drop-shadow(0.5px 0.5px 1px white);
+  }
+}
+
+.header-background {
+  background-color: $gray-color;
+  width: 100%;
+  height: $header-mobile-height;
+
+  @include media-breakpoint-up(sm) {
+    height: $header-desktop-height;
   }
 }

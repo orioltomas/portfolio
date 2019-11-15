@@ -8,6 +8,10 @@
         {{ block('layout_header') }}
     {% endblock %}
 
+    {% if app.request.attributes.get('_route') != 'home' %}
+        {% include 'header_background.html.twig' %}
+    {% endif %}
+
     <div class="wrapper">
         <div id="content">
             {% block content %}{% endblock %}
