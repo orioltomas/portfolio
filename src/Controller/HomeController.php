@@ -22,4 +22,12 @@ class HomeController extends AbstractController
     {
         return $this->render('portfolio.html.twig');
     }
+
+    /**
+     * @Route("/experience", name="experience")
+     */
+    public function experience()
+    {
+        return $this->render('experience.html.twig');
+    }
 }

@@ -13,7 +13,7 @@
     {% endif %}
 
     <div class="wrapper">
-        <div id="content">
+        <div id="content" {% if app.request.attributes.get('_route') != 'home' %}class="no-home"{% endif %}>
             {% block content %}{% endblock %}
         </div>
     </div>
