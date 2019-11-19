@@ -3066,16 +3066,16 @@
         },
         {
             "name": "symfony/framework-bundle",
-            "version": "v4.2.4",
+            "version": "v4.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/framework-bundle.git",
-                "reference": "50227854eb9863a1cae38952baff4d80953e7336"
+                "reference": "ac12bd9f104bb2dc319b09426e767ecfa95688da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/50227854eb9863a1cae38952baff4d80953e7336",
-                "reference": "50227854eb9863a1cae38952baff4d80953e7336",
+                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/ac12bd9f104bb2dc319b09426e767ecfa95688da",
+                "reference": "ac12bd9f104bb2dc319b09426e767ecfa95688da",
                 "shasum": ""
             },
             "require": {
@@ -3084,14 +3084,15 @@
                 "symfony/cache": "~4.2",
                 "symfony/config": "~4.2",
                 "symfony/contracts": "^1.0.2",
-                "symfony/dependency-injection": "^4.2",
+                "symfony/debug": "~4.0",
+                "symfony/dependency-injection": "^4.2.5",
                 "symfony/event-dispatcher": "^4.1",
                 "symfony/filesystem": "~3.4|~4.0",
                 "symfony/finder": "~3.4|~4.0",
-                "symfony/http-foundation": "^4.1.2",
+                "symfony/http-foundation": "^4.2.5",
                 "symfony/http-kernel": "^4.2",
                 "symfony/polyfill-mbstring": "~1.0",
-                "symfony/routing": "^4.1"
+                "symfony/routing": "^4.2.8"
             },
             "conflict": {
                 "phpdocumentor/reflection-docblock": "<3.0",
@@ -3181,7 +3182,7 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
-            "time": "2019-02-24T02:12:10+00:00"
+            "time": "2019-07-24T17:13:20+00:00"
         },
         {
             "name": "symfony/http-foundation",
