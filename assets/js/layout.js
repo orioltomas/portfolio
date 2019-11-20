@@ -1,4 +1,5 @@
 import $ from 'jquery';
+require('bootstrap');
 
 $(document).ready(function () {
     $("a").on('click', function(event) {
@@ -27,5 +28,11 @@ $(document).ready(function () {
         $('#sidebar').toggleClass('active');
         $(this).toggleClass('active');
         $('#content').toggleClass('active');
+    });
+
+    // EXPERIENCE
+
+    $('#experience-line').on('hover', function () {
+        $('#content').css('background-color', rgba(0,0,0,0.5));
     });
 });
