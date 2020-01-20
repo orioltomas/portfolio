@@ -1,7 +1,8 @@
 # portfolio
 
-Vhosts
+VHOSTS example
 
+```
 <VirtualHost *:80>
     ServerName dev.portfolio
     DocumentRoot "/PATH/portfolio/public"
@@ -15,3 +16,4 @@ Vhosts
 	FallbackResource /index.php
     </Directory>
 </VirtualHost>
+```
