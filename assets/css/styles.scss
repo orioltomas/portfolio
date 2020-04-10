@@ -14,13 +14,15 @@ body {
   width: 100%;
 
   &.no-home {
-    margin: $content-margin-mobile 0;
+    padding: $content-margin-mobile 0;
+    margin-top: $header-mobile-height;
 
     @include media-breakpoint-up(sm) {
-      margin: $content-margin-desktop 0;
+      padding: $content-margin-desktop 0;
+      margin-top: $header-desktop-height;
     }
     @include media-breakpoint-up(lg) {
-      margin: $content-margin-large-desktop 0;
+      padding: $content-margin-large-desktop 0;
     }
   }
 }

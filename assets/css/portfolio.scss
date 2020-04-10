@@ -1,0 +1,12 @@
+.portfolio {
+
+  &__link {
+    color: $blue-color;
+
+    &:hover {
+      text-decoration: none;
+      color: $blue-color;
+      letter-spacing: 1px;
+    }
+  }
+}

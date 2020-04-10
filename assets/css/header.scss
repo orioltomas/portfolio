@@ -11,9 +11,39 @@ header {
       height: $header-desktop-height;
     }
 
+    .header-col-left, .header-col-right {
+      position: fixed;
+    }
+
+    .header-col-left {
+      z-index: 700;
+      top: 24px;
+
+      @include media-breakpoint-up(sm) {
+        top: 45px;
+      }
+      &.home {
+        position: relative;
+      }
+    }
+
+    .header-col-right {
+      z-index: 750;
+      top: 10px;
+      right: 0;
+
+      @include media-breakpoint-up(sm) {
+        z-index: 700;
+        top: 30px;
+      }
+      @include media-breakpoint-up(lg) {
+        top: 45px;
+      }
+    }
+
     h1 {
       position: relative;
-      z-index: 700;
+      //z-index: 700;
       left: 25px;
       display: inline-flex;
       font-size: 18px;
@@ -33,7 +63,7 @@ header {
 
     .right-menu {
       position: relative;
-      z-index: 700;
+      //z-index: 700;
       display: none;
       float: right;
       margin-bottom: 0;
@@ -63,7 +93,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 900;
+    z-index: 750;
     background: $gray-color;
     opacity: 1;
     transition: all 0.6s;
@@ -81,7 +111,7 @@ header {
   }
 
   #sidebarCollapse {
-    z-index: 1000;
+    //z-index: 750;
     position: relative;
     float: right;
     right: 25px;
@@ -165,6 +195,8 @@ header {
 }
 
 .header-background {
+  position: fixed;
+  z-index: 500;
   background-color: $gray-color;
   width: 100%;
   height: $header-mobile-height;

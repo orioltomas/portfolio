@@ -55,10 +55,10 @@ footer {
       margin: -1.8rem;
     }
     &.github span {
-      background-color: #7d7d7d;
+      background-color: $light-gray-color;
     }
     &.linkedin span {
-      background-color: #0073b1;
+      background-color: $purple-color;
     }
     & i {
       background: none;
@@ -76,10 +76,10 @@ footer {
       z-index: 10;
     }
     & .fa-github-alt {
-      color: #7d7d7d;
+      color: $light-gray-color;
     }
     & .fa-linkedin-in {
-      color: #0073b1;
+      color: $purple-color;
     }
     &:hover .fa-github-alt,
     &:hover .fa-linkedin-in {
