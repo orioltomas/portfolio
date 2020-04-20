@@ -40,7 +40,7 @@ $(document).ready(function () {
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll > 5) {
+    if (scroll > 1) {
         console.log('scroll');
         $('.home__bottom-img').addClass('active');
     } else {
