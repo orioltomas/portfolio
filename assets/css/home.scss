@@ -56,20 +56,29 @@
   }
   &__bottom-img {
     position: absolute;
-    bottom: 0;
+    bottom: 35px;
     width: 100%;
 
+    @include media-breakpoint-up(md) {
+      bottom: 0;
+    }
     &__img {
-      height: 90px;
-      width: 90px;
+      height: 75px;
+      width: 75px;
       margin-right: auto;
       margin-left: auto;
-      margin-bottom: 15px;
+      margin-bottom: 7px;
       border: 2px solid white;
       border-radius: 50%;
       background-image: url('../images/oriol_tomas.jpg');
       background-size: cover;
       background-position: center;
+
+      @include media-breakpoint-up(md) {
+        height: 90px;
+        width: 90px;
+        margin-bottom: 15px;
+      }
     }
   }
   &__about-me {
