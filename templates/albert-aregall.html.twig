@@ -1,0 +1,41 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <div class="albert-aregall text-center">
+        <h1 class="pb-4 pb-lg-5">ALBERT AREGALL ARQUITECTURA</h1>
+        <div class="container">
+            <div class="col-12">
+                <div class="albert-aregall__description text-left pb-5">
+                    <h5 class="font-weight-lighter pb-3">ABOUT THE PROJECT</h5>
+                    <div class="albert-aregall__content pb-3">
+                        Web project developed for the architect Albert Aregall.<br/><br/>
+                        The project was thought as a single page to show his multiple projects where images are
+                        the most important input for the user and Albert's contact information is always visible.
+                        The design was created by <a href="https://www.jorgebraun.design/" target="_blank">Jorge Braun</a>,
+                        a UX/UI product designer with a powerful web development background.
+                        The main goal of this project was to create a fully renovated professional web page where Albert
+                        could show his portfolio of projects using images and renders of his own. We thought this was the
+                        best way to attract his potential clients, just showing them what he can offer and his more than
+                        relevant work in the architecture's world.
+                    </div>
+                    <h5 class="font-weight-lighter pt-3 pb-3">PROJECT DETAILS</h5>
+                    <div>Develop with Pimcore 6</div>
+                    <div>JULY 2020</div>
+                    <div class="albert-aregall__url">
+                        <a href="http://aregall.com/" target="_blank">WWW.AREGALL.COM</a>
+                    </div>
+                </div>
+                <div class="albert-aregall__project pt-3">
+                    <img class="albert-aregall__image" src="{{ asset('build/images/albert-aregall/albertaregall1.png') }}">
+                    <img class="albert-aregall__image" src="{{ asset('build/images/albert-aregall/albertaregall2.png') }}">
+                    <img class="albert-aregall__image" src="{{ asset('build/images/albert-aregall/albertaregall3.png') }}">
+                    <img class="albert-aregall__image" src="{{ asset('build/images/albert-aregall/albertaregall4.png') }}">
+                    <img class="albert-aregall__image" src="{{ asset('build/images/albert-aregall/albertaregall5.png') }}">
+                    <img class="albert-aregall__image" src="{{ asset('build/images/albert-aregall/albertaregall6.png') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <div class="josep-mateu text-center">
+        <h1 class="pb-4 pb-lg-5">JOSEP MATEU</h1>
+        <div class="container">
+            <div class="col-12">
+                <div class="josep-mateu__description text-left pb-5">
+                    <h5 class="font-weight-lighter pb-3">ABOUT THE PROJECT</h5>
+                    <div class="josep-mateu__content pb-3">
+                        Web project developed for RACC's President and CEO, Josep Mateu.<br/><br/>
+                        The project was thought as a redesign from his previous personal website.
+                        The main goal of this project was to refactor his actual single page to show updated information
+                        about Josep Mateu and his work and preceded by a slider of images of him. In the catalan and
+                        spanish versions the user could also find a link to his candidacy for the RACC 2020 elections.
+                    </div>
+                    <h5 class="font-weight-lighter pt-3 pb-3">PROJECT DETAILS</h5>
+                    <div>Develop with Symfony 4</div>
+                    <div>SEPTEMBER 2020</div>
+                    <div class="josep-mateu__url">
+                        <a href="http://josepmateu.cat/" target="_blank">WWW.JOSEPMATEU.CAT</a>
+                    </div>
+                </div>
+                <div class="josep-mateu__project pt-3">
+                    <img class="josep-mateu__image" src="{{ asset('build/images/josep-mateu/josepmateu1.png') }}">
+                    <img class="josep-mateu__image" src="{{ asset('build/images/josep-mateu/josepmateu2.png') }}">
+                    <img class="josep-mateu__image" src="{{ asset('build/images/josep-mateu/josepmateu3.png') }}">
+                    <img class="josep-mateu__image" src="{{ asset('build/images/josep-mateu/josepmateu4.png') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

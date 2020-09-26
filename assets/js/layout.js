@@ -36,15 +36,3 @@ $(document).ready(function () {
         $('#content').css('background-color', rgba(0,0,0,0.5));
     });
 });
-
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll > 1) {
-        console.log('scroll');
-        $('.home__bottom-img').addClass('active');
-    } else {
-        console.log('not scroll');
-        $('.home__bottom-img').removeClass('active');
-    }
-});

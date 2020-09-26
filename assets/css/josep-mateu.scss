@@ -1,0 +1,36 @@
+.josep-mateu {
+
+  &__content {
+    a {
+      color: white;
+      background-color: $gray-color;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  &__url {
+    a {
+      color: $gray-color;
+      font-weight: lighter;
+      text-decoration: underline;
+
+      &:hover {
+        color: $light-gray-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 90%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+    }
+  }
+}

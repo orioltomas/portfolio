@@ -30,4 +30,20 @@ class HomeController extends AbstractController
     {
         return $this->render('experience.html.twig');
     }
+
+    /**
+     * @Route("/albert-aregall", name="albert-aregall")
+     */
+    public function albertaregall()
+    {
+        return $this->render('albert-aregall.html.twig');
+    }
+
+    /**
+     * @Route("/josep-mateu", name="josep-mateu")
+     */
+    public function josepmateu()
+    {
+        return $this->render('josep-mateu.html.twig');
+    }
 }

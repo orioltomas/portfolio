@@ -56,16 +56,9 @@
   }
   &__bottom-img {
     position: absolute;
-    bottom: 125px;
+    bottom: 0;
     width: 100%;
-    transition: bottom .5s linear;
 
-    @include media-breakpoint-up(md) {
-      bottom: 0;
-    }
-    &.active {
-      bottom: 0;
-    }
     &__img {
       height: 75px;
       width: 75px;
