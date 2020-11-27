@@ -1,0 +1,37 @@
+.vincle-studio {
+
+  &__content {
+    a {
+      color: $gray-color;
+      font-weight: lighter;
+      text-decoration: underline;
+
+      &:hover {
+        color: $light-gray-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__url {
+    a {
+      color: $gray-color;
+      font-weight: lighter;
+      text-decoration: underline;
+
+      &:hover {
+        color: $light-gray-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 90%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+    }
+  }
+}

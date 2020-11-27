@@ -46,4 +46,12 @@ class HomeController extends AbstractController
     {
         return $this->render('josep-mateu.html.twig');
     }
+
+    /**
+     * @Route("/vincle-studio", name="vincle-studio")
+     */
+    public function vinclestudio()
+    {
+        return $this->render('vincle-studio.html.twig');
+    }
 }
