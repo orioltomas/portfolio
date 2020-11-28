@@ -20,7 +20,7 @@ header {
       top: 24px;
 
       @include media-breakpoint-up(sm) {
-        top: 45px;
+        top: 30px;
       }
       &.home {
         position: relative;
@@ -34,10 +34,10 @@ header {
 
       @include media-breakpoint-up(sm) {
         z-index: 700;
-        top: 30px;
+        top: 20px;
       }
       @include media-breakpoint-up(lg) {
-        top: 45px;
+        top: 30px;
       }
     }
 
