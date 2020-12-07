@@ -4,7 +4,10 @@
 
     <div class="josep-mateu text-center">
         <div class="portfolio__project-back-wrapper">
-            <a class="portfolio__project-back" href="{{ path('portfolio') }}">< {{ 'portfolio.project.back' | trans | upper }}</a>
+            <a class="portfolio__project-back" href="{{ path('portfolio') }}">
+                <div class="d-inline-flex"><i class="fas fa-chevron-left"></i></div>
+                {{ 'portfolio.project.back' | trans | upper }}
+            </a>
         </div>
         <h1 class="pb-4 pb-lg-5">JOSEP MATEU</h1>
         <div class="container">
