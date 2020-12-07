@@ -3,12 +3,27 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route({
+     *     "ca": "/",
+     *     "en": "/"
+     * }, name="main")
+     */
+    public function redirectToHome(Request $request)
+    {
+        return $this->redirectToRoute('home');
+    }
+
+    /**
+     * @Route({
+     *     "ca": "/ca",
+     *     "en": "/en"
+     * }, name="home")
      */
     public function home()
     {
@@ -16,7 +31,10 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/portfolio", name="portfolio")
+     * @Route({
+     *     "ca": "/ca/portfoli",
+     *     "en": "/en/portfolio"
+     * }, name="portfolio")
      */
     public function portfolio()
     {
@@ -24,7 +42,10 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/experience", name="experience")
+     * @Route({
+     *     "ca": "/ca/experiencia",
+     *     "en": "/en/experience"
+     * }, name="experience")
      */
     public function experience()
     {
@@ -32,7 +53,10 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/albert-aregall", name="albert-aregall")
+     * @Route({
+     *     "ca": "/ca/albert-aregall",
+     *     "en": "/en/albert-aregall"
+     * }, name="albert-aregall")
      */
     public function albertaregall()
     {
@@ -40,7 +64,10 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/josep-mateu", name="josep-mateu")
+     * @Route({
+     *     "ca": "/ca/josep-mateu",
+     *     "en": "/en/josep-mateu"
+     * }, name="josep-mateu")
      */
     public function josepmateu()
     {
@@ -48,7 +75,10 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/vincle-studio", name="vincle-studio")
+     * @Route({
+     *     "ca": "/ca/vincle-studio",
+     *     "en": "/en/vincle-studio"
+     * }, name="vincle-studio")
      */
     public function vinclestudio()
     {

@@ -1,12 +1,23 @@
 {% block header %}
 
+    {% if app.request.getLocale() is same as('ca') %}
+        {% set languageSwitchLink = path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'})) %}
+    {% else %}
+        {% set languageSwitchLink = path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'ca'})) %}
+    {% endif %}
+
     <header>
         <nav id="sidebar">
 
             <ul class="list-unstyled components">
-                <li><a href="{{ path('home') }}">Home</a></li>
-                <li><a href="{{ path('portfolio') }}">Portfolio</a></li>
-                <li><a href="{{ path('experience') }}">Experience</a></li>
+                <li><a href="{{ path('home') }}">{{ 'menu.home' | trans }}</a></li>
+                <li><a href="{{ path('portfolio') }}">{{ 'menu.portfolio' | trans }}</a></li>
+                <li><a href="{{ path('experience') }}">{{ 'menu.experience' | trans }}</a></li>
+                {% if app.request.getLocale() is same as('ca') %}
+                    <li><a href="{{ languageSwitchLink }}">EN</a></li>
+                {% else %}
+                    <li><a href="{{ languageSwitchLink }}">CA</a></li>
+                {% endif %}
             </ul>
         </nav>
 
@@ -16,20 +27,25 @@
                     <div class="col-9 pl-0 pr-0 align-middle header-col-left{{ app.request.attributes.get('_route') is same as('home') ? ' home' : '' }}">
                         <h1>Oriol Tomàs Fortuny</h1>
                     </div>
-                    {% if (app.request.attributes.get('_route') != 'home') %}
-                        <div class="col-3 pl-0 pr-0 align-middle header-col-right">
-                            <ul class="list-unstyled flex right-menu">
-                                <li><a href="{{ path('home') }}">Home</a></li>
-                                <li><a href="{{ path('portfolio') }}">Portfolio</a></li>
-                                <li><a href="{{ path('experience') }}">Experience</a></li>
-                            </ul>
-                            <button type="button" id="sidebarCollapse" class="navbar-btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-                    {% endif %}
+                    <div class="col-3 pl-0 pr-0 align-middle header-col-right">
+                        <ul class="list-unstyled flex right-menu">
+                            {% if (app.request.attributes.get('_route') != 'home') %}
+                                <li><a href="{{ path('home') }}">{{ 'menu.home' | trans }}</a></li>
+                                <li><a href="{{ path('portfolio') }}">{{ 'menu.portfolio' | trans }}</a></li>
+                                <li><a href="{{ path('experience') }}">{{ 'menu.experience' | trans }}</a></li>
+                            {% endif %}
+                            {% if app.request.getLocale() is same as('ca') %}
+                                <li><a href="{{ languageSwitchLink }}">EN</a></li>
+                            {% else %}
+                                <li><a href="{{ languageSwitchLink }}">CA</a></li>
+                            {% endif %}
+                        </ul>
+                        <button type="button" id="sidebarCollapse" class="navbar-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

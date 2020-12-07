@@ -7,24 +7,13 @@
         <div class="container">
             <div class="col-12">
                 <div class="vincle-studio__description text-left pb-5">
-                    <h5 class="font-weight-lighter pb-3">ABOUT THE PROJECT</h5>
+                    <h5 class="font-weight-lighter pb-3">{{ 'portfolio.project.about' | trans | upper }}</h5>
                     <div class="vincle-studio__content pb-3">
-                        Web project developed for the architect and interior designer Sergi Pérez.<br/><br/>
-                        The project was thought as a full company web page that has four main parts all of them accessible
-                        from the menu, as we thought the main page to be only a "Welcome" page.<br/>
-                        The first one contains an overview of all the architectural projects designed and developed
-                        by the company. Each one of the projects has its own page with more detailed information like:
-                        the client it was done for, what type of project is, its location or a description about the project
-                        alongside with some photos, renders and plans.<br/>
-                        The second one is an overview of collaborations done for some other companies or clients basically
-                        centered on interior redesign. Those contain the renders and some information about the collaboration.<br/>
-                        The third and fourth ones are related to the company itself. One is based on the description of
-                        the studio and the other one contains some contact information.<br/>
-                        The web was developed to be accessible in spanish and english.
+                        {{ 'portfolio.project.vincle-studio.description' | trans | raw }}
                     </div>
-                    <h5 class="font-weight-lighter pt-3 pb-3">PROJECT DETAILS</h5>
-                    <div>Develop with Pimcore 6</div>
-                    <div>SEPTEMBER 2020</div>
+                    <h5 class="font-weight-lighter pt-3 pb-3">{{ 'portfolio.project.details' | trans | upper }}</h5>
+                    <div>{{ 'portfolio.project.vincle-studio.development' | trans }}</div>
+                    <div>{{ 'portfolio.project.vincle-studio.date' | trans | upper }}</div>
                     <div class="vincle-studio__url">
                         <a href="http://vinclestudio.com/" target="_blank">WWW.VINCLESTUDIO.COM</a>
                     </div>

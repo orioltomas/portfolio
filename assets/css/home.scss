@@ -48,10 +48,13 @@
       @include media-breakpoint-up(lg) {
         margin: 0 40px;
       }
-    }
-    &__button:hover {
-      color: $gray-color;
-      background: rgba(white, 0.75);
+      &:hover {
+        color: $gray-color;
+        background: rgba(white, 0.75);
+      }
+      &:focus {
+        outline: none;
+      }
     }
   }
   &__bottom-img {

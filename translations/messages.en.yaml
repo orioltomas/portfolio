@@ -1,0 +1,113 @@
+menu:
+  home: Home
+  portfolio: Portfolio
+  experience: Experience
+
+home:
+  web-developer: Web developer
+  mobile:
+    web-developer:
+      first: Web
+      second: Developer
+
+about-me:
+  title: About me
+  description: <p class="pt-3">
+    I am a <b>Computer Science Engineer</b> graduated by Pompeu Fabra University in Barcelona in 2017.
+    I have been focused in web development since my last university year and sometime in the near future
+    I also want to start with app development.
+    </p>
+    <p class="pt-3">
+    On the professional side, I am always hungry for new knowledge and skills and somehow that is the reason I have created my own web.
+    My objective is to keep learning new things, basically in web and app development on both ends (front and back),
+    and to update this website with everything that I learn; coding languages, new technologies, good practices,
+    useful frameworks and components, app development, clean and solid code and many more things. For now, I will focus on:<br>
+    <b>Symfony framework using PHP, HTML, CSS, jQuery and JS</b><br>
+    <b>iOS app development</b>
+    </p>
+    <p class="pt-3">
+    On the personal side, I consider myself a techie person who likes cutting-edge technologies and innovations.
+    My other top hobbies are cinema, music, books and basketball. These hobbies made me who I am today.<br>
+    I consider myself a team player, I really value helping those around you, hard work and commitment.
+    I'm a positive person and I think being open-minded and empathic and having moral values is very important.
+    </p>
+    <p class="pt-3">
+    Welcome to my site and ...<br>
+    <b>Thank you for your time!</b>
+    </p>
+
+portfolio:
+  title: Portfolio
+  web-projects: Web projects
+  ios:
+    title: iOS
+    development: Section under development
+  project:
+    about: About the project
+    details: Project details
+    albert-aregall:
+      description: Web project developed for the architect Albert Aregall.<br/><br/>
+        The project was thought as a single page to show his multiple projects where images are
+        the most important input for the user and Albert's contact information is always visible.
+        The design was created by <a href="https://www.jorgebraun.design/" target="_blank">Jorge Braun</a>,
+        a UX/UI product designer with a powerful web development background.<br>
+        The main goal of this project was to create a fully renovated professional web page where Albert
+        could show his portfolio of projects using images and renders of his own. We thought this was the
+        best way to attract his potential clients, just showing them what he can offer and his more than
+        relevant work in the architecture's world.
+      development: Developed with Pimcore 6
+      date: July 2020
+    josep-mateu:
+      description: Web project developed for RACC's President and CEO, Josep Mateu.<br/><br/>
+        The project was thought as a redesign from his previous personal website.<br>
+        The main goal of this project was to refactor his actual single page to show updated information
+        about Josep Mateu and his work and preceded by a slider of images of him. In the catalan and
+        spanish versions the user could also find a link to his candidacy for the RACC 2020 elections.
+      development: Developed with Symfony 4
+      date: September 2020
+    vincle-studio:
+      description: Web project developed for the architect and interior designer Sergi Pérez.<br/><br/>
+        The project was thought as a full company web page that has four main parts all of them accessible
+        from the menu, as we thought the main page to be only a "Welcome" page.<br/>
+        The first one contains an overview of all the architectural projects designed and developed
+        by the company. Each one of the projects has its own page with more detailed information like;
+        the client it was done for, what type of project is, its location or a description about the project
+        alongside with some photos, renders and plans.<br/>
+        The second one is an overview of collaborations done for some other companies or clients basically
+        centered on interior redesign. Those contain the renders and some information about the collaboration.<br/>
+        The third and fourth ones are related to the company itself. One is based on the description of
+        the studio and the other one contains some contact information.<br/>
+        The web was developed to be accessible in spanish and english.
+      development: Developed with Pimcore 6
+      date: September 2020
+
+experience:
+  title: Experience
+  more-detail: Click on the logos to see more details.
+  dgtls:
+    date: From March 2019
+    position: Nowadays I'm working on this german international digital agency as a <b>Full-stack Web Developer</b>
+    description: I work on the creation of web pages for clients using Pimcore which is an open source Symfony-based CMS. Some of my tasks are the development of new features, the maintenance of existing code and its refactorization when needed in the different projects I'm involved into.
+    technologies: <b>Technologies</b><br>Symfony4, PHP7 and SQL (backend)<br>HTML, TWIG, CSS, jQuery and JavaScript (frontend)
+  grup-eina:
+    date-from: From March 2018
+    date-to: to March 2019
+    position: I worked for one year on this automotive-based company as a <b>Backend Web Developer</b>
+    description: I took part on the creation of web applications for clients and for internal purposes using the Symfony framework. I was involved in the development of new features and the maintenance of the existing code for the multiple existing projects of the company.
+    technologies: <b>Technologies</b><br>Symfony3, PHP5, PHP7 and SQL (backend)<br>TWIG, jQuery and JavaScript (frontend)
+    methodologies: <b>Methodologies</b><br>Scrum (agile)
+  bebop:
+    date-from: From September 2017
+    date-to: to March 2018
+    position: I worked on this Barcelona-based digital agency as a <b>Backend Web Developer</b>
+    description: I was involved in several projects focus in the creation of web pages for clients using Drupal which is an open source CMS.
+    technologies: <b>Technologies</b><br>PHP5 and SQL (backend)
+  opendrako:
+    date-from: From January 2016
+    date-to: to March 2016
+    position: I worked as an intern in this education-based company while I was studying my Computer Science Degree as a <b>Backend Web Developer</b>
+    description: I created a web application for internal management and I was involved on the development of new features and code maintenance of its main product, a web application with educational purposes, using the Symfony framework.
+    technologies: <b>Technologies</b><br>PHP and SQL (backend)<br>HTML, TWIG and CSS (frontend)
+
+footer:
+  all-rights-reserved: All rights reserved.

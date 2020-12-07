@@ -3,12 +3,12 @@
 {% block content %}
 
     <div class="portfolio text-center">
-        <h1 class="pb-3 pb-lg-5">PORTFOLIO</h1>
+        <h1 class="pb-3 pb-lg-5">{{ 'portfolio.title' | trans | upper }}</h1>
         <div class="col-12">
             <div class="row pt-5 pt-lg-5 pb-lg-5">
                 <div class="col-12 offset-lg-1 col-lg-5">
                     <div class="pb-5">
-                        <b>WEB PROJECTS</b>
+                        <b>{{ 'portfolio.web-projects' | trans | upper }}</b>
                     </div>
                     <div class="pb-5">
                         <a class="portfolio__project-link" href="{{ path('albert-aregall') }}">
@@ -31,10 +31,10 @@
                 </div>
                 <div class="col-12 col-lg-5 pb-5">
                     <div class="pt-5 pt-lg-0 pb-5">
-                        <b>iOS</b>
+                        <b>{{ 'portfolio.ios.title' | trans }}</b>
                     </div>
                     <div class="">
-                        <div><small><i>Section under development</i></small></div>
+                        <div><small><i>{{ 'portfolio.ios.development' | trans }}</i></small></div>
                     </div>
                 </div>
             </div>

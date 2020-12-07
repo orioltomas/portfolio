@@ -1,0 +1,117 @@
+menu:
+  home: Inici
+  portfolio: Portfoli
+  experience: Experiència
+
+home:
+  web-developer: Programador web
+  mobile:
+    web-developer:
+      first: Programador
+      second: Web
+
+about-me:
+  title: Sobre mi
+  description: <p class="pt-3">
+    Sóc <b>Graduat en Enginyeria Informàtica</b> per la Universitat Pompeu Fabra de Barcelona des del 2017.
+    He estat centrat en el desenvolupament web des del meu últim any a la universitat i, per altra banda, m'he iniciat
+    recentment en el desenvolupament d'aplicacions iOS de manera autodidacta.
+    </p>
+    <p class="pt-3">
+    Professionalment parlant, estic continuament aprenent noves tecnologies i habilitats i, d'alguna manera,
+    aquest és el motiu principal d'haver creat la meva pròpia web. El meu objectiu és seguir adquirint nous coneixements,
+    tant en web (backend i frontend) com en iOS, i actualitzar la web tot allò que vaig aprenent; nous languages de codi,
+    noves tecnologies, frameworks i components útils o interessants i tot desenvolupat incorporant bones pràctiques i
+    seguint les regles SOLID. L'última part es podrà veure directament al codi ja que el projecte està a GitHub i és
+    accessible de manera pública. Ara per ara, em centro en:<br>
+    <b>Desenvolupament web amb el framework Symfony utilitzant PHP, HTML, CSS, jQuery i JS</b><br>
+    <b>Desenvolupament d'aplicacions iOS</b>
+    </p>
+    <p class="pt-3">
+    En l'àmbit personal, em considero una persona 'techie' ja que m'agrada estar atent a totes les innovacions i
+    novetats tecnològiques. Algunes de les meves aficions son el cinema, la música, els llibres i el bàsquet. Aquestes
+    aficions m'han convertit en qui sóc avui.<br>
+    Sóc una persona d'equip i penso que és molt important ajudar a aquells que t'envolten, treballar dur i estar compromès
+    amb que fas. També sóc positiu i considero que tenir la ment oberta, ser empàtic i tenir valors morals sòlids és molt
+    important per afrontar la vida.
+    </p>
+    <p class="pt-3">
+    Benvinguts a la meva pàgina i ...<br>
+    <b>Gràcies pel vostre temps!</b>
+    </p>
+
+portfolio:
+  title: Portfoli
+  web-projects: Projectes web
+  ios:
+    title: iOS
+    development: Secció en desenvolupament
+  project:
+    about: Sobre el projecte
+    details: Detalls del projecte
+    albert-aregall:
+      description: Projecte web desenvolupat per l'arquitecte Albert Aregall.<br/><br/>
+        El projecte va ser pensat com a una única pàgina per mostrar els seus múltiples projectes on les imatges son
+        el més important per l'usuari i la seva informació de contacte està sempre visible.
+        El disseny va ser creat per <a href="https://www.jorgebraun.design/" target="_blank">Jorge Braun</a>,
+        un dissenyador de producte especialitzat en UX/UI amb una potent base en desenvolupament web.<br>
+        L'objectiu principal del projecte era crear un pàgina web professional completament renovada on l'Albert
+        pogués mostrar el seu portfoli de projects utilitzant images i renders. Vam decidir que aquesta era la millor
+        manera d'atraure potencials clients, mostrant-los el que els pot oferir i la seva rellevant trajectòria en
+        l'àmbit de l'arquitectura.
+      development: Desenvolupat amb Pimcore 6
+      date: Juliol 2020
+    josep-mateu:
+      description: Projecte web desenvolupat pel president i CEO del RACC, Josep Mateu.<br/><br/>
+        El projecte va ser pensat com a un redisseny de la seva pàgina personal prèvia.<br>
+        L'objectiu principal era actualitzar la seva pàgina amb nova informació sobre ell i la seva feina juntament
+        amb un galeria d'imatges. En les versions en català i en anglès, l'usuari podria també trobar-hi
+         un enllaç a la seva candidatura per les eleccions del RACC del 2020.
+      development: Desenvolupat amb Symfony 4
+      date: Setembre 2020
+    vincle-studio:
+      description: Projecte web desenvolupat per l'arquitecte i dissenyador d'interiors Sergi Pérez.<br/><br/>
+        El projecte va ser pensat com a una completa pàgina web d'empresa que en un inici té quartre apartats
+        principals accessibles des del menú, ja que la pàgina inicial només és de benvinguda.<br/>
+        El primer de tots conté una vista general de tots els projectes d'arquitectura i disseny creats i desenvolupats
+        per l'empresa. Cada projecte té la seva pàgina de detall que conté information més concreta com ara;
+        el client pel qual ha estat pensat i desenvolupat, quin tipus de projecte és, la seva localització
+        o la descripció sobre el projecte juntament amb imatges, renders i plànols.<br/>
+        El segon apartat és una vista general de les col·laboracions per altres companyies o clients principalment
+        centrat en redissenys d'interiors. Aquests contenen renders i informació sobre la col·laboració.<br/>
+        El tercer i el quart estan relacionats amb l'empresa mateixa. Un d'ells basat en la descripció de l'estudi
+        i l'altre conté informació de contacte.<br/>
+        La web va ser pensada per ser accessible en castellà i anglès.
+      development: Desenvolupat amb Pimcore 6
+      date: Setembre 2020
+
+experience:
+  title: Experiència
+  more-detail: Clica sobre les icones per veure'n més detalls.
+  dgtls:
+    date: Des del març del 2019
+    position: Actualment estic treballant en aquesta agència digital internacional alemanya com a <b>Programador Web Full-stack</b>
+    description: L'activitat de l'empresa se centra és la creació de pàgines web per clients utilitzant Pimcore que és un CMS open source basat en Symfony. Algunes de les meves tasques son el desenvolupament de noves funcionalitats, el manteniment del codi existent dels diferents projectes de l'empresa i la seva refactorització en cas de necessitat.
+    technologies: <b>Tecnologies</b><br>Symfony4, PHP7 i SQL (backend)<br>HTML, TWIG, CSS, jQuery and JavaScript (frontend)
+  grup-eina:
+    date-from: Des del març del 2018
+    date-to: fins al març del 2019
+    position: Vaig treballar durant un any en aquesta empresa basada en l'automoció com a <b>Programador Web Backend</b>
+    description: Vaig formar part en la creació d'aplicacions web desenvolupades a mida pels clients i en d'altres d'ús intern de l'empresa utilitzant el framework Symfony. Vaig estar involucrat en el desenvolupament de noves funcionalitats i el manteniment del codi existent.
+    technologies: <b>Tecnologies</b><br>Symfony3, PHP5, PHP7 i SQL (backend)<br>TWIG, jQuery i JavaScript (frontend)
+    methodologies: <b>Metodologies</b><br>Scrum (agile)
+  bebop:
+    date-from: Des del setembre del 2017
+    date-to: fins al març del 2018
+    position: Vaig treballar en aquesta agència digital de Barcelona com a <b>Programador Web Backend</b>
+    description: Vaig estar involucrat en diversos projectes de creació de pàgines web per clients utilitzant Drupal que és un CMS open source.
+    technologies: <b>Tecnologies</b><br>PHP5 i SQL (backend)
+  opendrako:
+    date-from: Des del gener del 2016
+    date-to: fins al març del 2016
+    position: Vaig treballar com a estudiant en pràctiques en aquesta empresa desenvolupant un software de gestió acadèmica mentre estudiava el Grau d'Enginyeria Informàtica com a <b>Programador Web Backend</b>
+    description: Vaig tenir l'oportunitat de crear una aplicació web de gestió interna i vaig formestar involucrat en el desenvolupament de noves funcionalitats en el projecte principal de l'empresa utilitzant el framework Symfony.
+    technologies: <b>Tecnologies</b><br>Symfony2, PHP5 i SQL (backend)<br>HTML, TWIG i CSS (frontend)
+
+footer:
+  all-rights-reserved: Tots els drets reservats.

@@ -8,14 +8,20 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12 home__center-img__headline">
-                        <div class="d-none d-md-block">WEB DEVELOPER</div>
-                        <div class="d-block d-md-none">WEB<br>DEVELOPER</div>
+                        <div class="d-none d-md-block">{{ 'home.web-developer' | trans | upper }}</div>
+                        <div class="d-block d-md-none">
+                            {{ 'home.mobile.web-developer.first' | trans | upper }}<br>
+                            {{ 'home.mobile.web-developer.second' | trans | upper }}</div>
                     </div>
                     <div class="col-12 col-md-6 mb-3 mb-md-0">
-                        <button class="home__center-img__button" onclick="location.href='{{ path('portfolio') }}'">PORTFOLIO</button>
+                        <button class="home__center-img__button" onclick="location.href='{{ path('portfolio') }}'">
+                            {{ 'portfolio.title' | trans | upper }}
+                        </button>
                     </div>
                     <div class="col-12 col-md-6">
-                        <button class="home__center-img__button" onclick="location.href='{{ path('experience') }}'">EXPERIENCE</button>
+                        <button class="home__center-img__button" onclick="location.href='{{ path('experience') }}'">
+                            {{ 'experience.title' | trans | upper }}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -32,31 +38,9 @@
 
     <div id="about-me" class="home__about-me">
         <div class="text-center container">
-            <h1>ABOUT ME</h1>
+            <h1>{{ 'about-me.title' | trans }}</h1>
             <div class="pt-3">
-                <p class="pt-3">
-                    I am a <b>Computer Science Engineer</b> graduated by Pompeu Fabra University in Barcelona in 2017.
-                    I have been focused in web development since my last university year and sometime in the near future
-                    I also want to start with app development.
-                </p>
-                <p class="pt-3">
-                    On the professional side, I am always hungry for new knowledge and skills and somehow that is the reason I have created my own web.
-                    My objective is to keep learning new things, basically in web and app development on both ends (front and back),
-                    and to update this website with everything that I learn: coding languages, new technologies, good practices,
-                    useful frameworks and components, app development, clean and solid code and many more things. For now, I will focus on:<br>
-                    <b>Symfony framework using PHP, HTML, CSS, jQuery and JS</b><br>
-                    <b>iOS app development</b>
-                </p>
-                <p class="pt-3">
-                    On the personal side, I consider myself a techie person who likes cutting-edge technologies and innovations.
-                    My other top hobbies are cinema, music, books and basketball. These hobbies made me who I am today.<br>
-                    I consider myself a team player, I really value helping those around you, hard work and commitment.
-                    I'm a positive person and I think being open-minded and empathic and having moral values is very important.
-                </p>
-                <p class="pt-3">
-                    Welcome to my site and ...<br>
-                    <b>Thank you for your time!</b>
-                </p>
+                {{ 'about-me.description' | trans | raw }}
             </div>
         </div>
     </div>

@@ -3,9 +3,9 @@
 {% block content %}
 
     <div class="experience text-center">
-        <div class="pb-3 pb-lg-5"><h1>EXPERIENCE</h1></div>
+        <div class="pb-3 pb-lg-5"><h1>{{ 'experience.title' | trans | upper }}</h1></div>
         <div class="col-12">
-            <div class="d-lg-none"><small><i>Click on the logos to see more details.</i></small></div>
+            <div class="d-lg-none"><small><i>{{ 'experience.more-detail' | trans }}</i></small></div>
             <div class="row pt-5 pt-lg-5 pb-lg-5 experience__line">
                 <div class="col-12">
                     <a href="#dgtlsmodal" class="d-lg-none experience__modal-link" data-toggle="modal">
@@ -16,19 +16,15 @@
                     <div class="experience__image-lg-div">
                         <img class="experience__image" src="{{ asset('build/images/dgtls.jpeg') }}">
                         <div class="mt-2">
-                            <span class="experience__time">From March 2019</span>
+                            <span class="experience__time">{{ 'experience.dgtls.date' | trans }}</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 d-none d-lg-inline">
                     <div class="pt-3 experience__description">
-                        Nowadays I'm working on this german international digital agency as a <b>Full-stack Web Developer</b><br><br>
-                        I work on the creation of web pages for clients using Pimcore which is an open source Symfony-based CMS.
-                        Some of my tasks are the development of new features, the maintenance of existing code and its refactorization when needed
-                        in the different projects I'm involved into.<br><br>
-                        <b>Technologies</b><br>
-                        PHP and SQL (backend)<br>
-                        HTML, TWIG, CSS, jQuery and JavaScript (frontend).
+                        {{ 'experience.dgtls.position' | trans | raw }}<br><br>
+                        {{ 'experience.dgtls.description' | trans | raw }}<br><br>
+                        {{ 'experience.dgtls.technologies' | trans | raw }}
                     </div>
                 </div>
                 <div class="modal fade" id="dgtlsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -41,15 +37,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <span class="experience__time">From March 2019</span>
+                                <span class="experience__time">{{ 'experience.dgtls.date' | trans }}</span>
                                 <div class="pt-3 experience__description">
-                                    Nowadays I'm working on this german international digital agency as a <b>Full-stack Web Developer</b><br><br>
-                                    I work on the creation of web pages for clients using Pimcore which is an open source Symfony-based CMS.
-                                    Some of my tasks are the development of new features, the maintenance of existing code and its refactorization when needed
-                                    in the different projects I'm involved into.<br><br>
-                                    <b>Technologies</b><br>
-                                    PHP and SQL (backend)<br>
-                                    HTML, TWIG, CSS, jQuery and JavaScript (frontend).
+                                    {{ 'experience.dgtls.position' | trans | raw }}<br><br>
+                                    {{ 'experience.dgtls.description' | trans | raw }}<br><br>
+                                    {{ 'experience.dgtls.technologies' | trans | raw }}
                                 </div>
                             </div>
                         </div>
@@ -66,21 +58,16 @@
                     <div class="experience__image-lg-div">
                         <img class="experience__image" src="{{ asset('build/images/ged.png') }}">
                         <div class="mt-2">
-                            <span class="experience__time">From March 2018<br>To March 2019</span>
+                            <span class="experience__time">{{ 'experience.grup-eina.date-from' | trans }}<br>{{ 'experience.grup-eina.date-to' | trans | capitalize }}</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 d-none d-lg-inline">
                     <div class="mt-3 experience__description">
-                        I worked for one year on this automotive-based company as a <b>Backend Web Developer</b><br><br>
-                        I took part on the creation of web applications for clients and for internal purposes using the Symfony framework.
-                        I was involved in the development of new features and the maintenance of the existing code
-                        for the multiple existing projects of the company.<br><br>
-                        <b>Technologies</b><br>
-                        PHP and SQL (backend)<br>
-                        TWIG, jQuery and JavaScript (frontend).<br><br>
-                        <b>Methodologies</b><br>
-                        Scrum (agile)
+                        {{ 'experience.grup-eina.position' | trans | raw }}<br><br>
+                        {{ 'experience.grup-eina.description' | trans | raw }}<br><br>
+                        {{ 'experience.grup-eina.technologies' | trans | raw }}<br><br>
+                        {{ 'experience.grup-eina.methodologies' | trans | raw }}
                     </div>
                 </div>
                 <div class="modal fade" id="gedmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -93,17 +80,12 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <span class="experience__time">From March 2018 to March 2019</span>
+                                <span class="experience__time">{{ 'experience.grup-eina.date-from' | trans }} {{ 'experience.grup-eina.date-to' | trans }}</span>
                                 <div class="pt-3 experience__description">
-                                    I worked for one year on this automotive-based company as a <b>Backend Web Developer</b><br><br>
-                                    I took part on the creation of web applications for clients and for internal purposes using the Symfony framework.
-                                    I was involved in the development of new features and the maintenance of the existing code
-                                    for the multiple existing projects of the company.<br><br>
-                                    <b>Technologies</b><br>
-                                    PHP and SQL (backend)<br>
-                                    HTML, TWIG, CSS, jQuery and JavaScript (frontend).<br><br>
-                                    <b>Methodologies</b><br>
-                                    Scrum (agile)
+                                    {{ 'experience.grup-eina.position' | trans | raw }}<br><br>
+                                    {{ 'experience.grup-eina.description' | trans | raw }}<br><br>
+                                    {{ 'experience.grup-eina.technologies' | trans | raw }}<br><br>
+                                    {{ 'experience.grup-eina.methodologies' | trans | raw }}
                                 </div>
                             </div>
                         </div>
@@ -120,17 +102,15 @@
                     <div class="experience__image-lg-div">
                         <img class="experience__image" src="{{ asset('build/images/bebop.png') }}">
                         <div class="mt-2">
-                            <span class="experience__time">From September 2017<br>To March 2018</span>
+                            <span class="experience__time">{{ 'experience.bebop.date-from' | trans }}<br>{{ 'experience.bebop.date-to' | trans | capitalize }}</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 d-none d-lg-inline">
                     <div class="pt-3 experience__description">
-                        I worked on this Barcelona-based digital agency as a <b>Backend Web Developer</b><br><br>
-                        I was involved in several projects focus in the creation of web pages for clients using Drupal
-                        which is an open source CMS.<br><br>
-                        <b>Technologies</b><br>
-                        PHP and SQL (backend)
+                        {{ 'experience.bebop.position' | trans | raw }}<br><br>
+                        {{ 'experience.bebop.description' | trans | raw }}<br><br>
+                        {{ 'experience.bebop.technologies' | trans | raw }}
                     </div>
                 </div>
                 <div class="modal fade" id="bebopmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -143,13 +123,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <span class="experience__time">From September 2017 to March 2018</span>
+                                <span class="experience__time">{{ 'experience.bebop.date-from' | trans }} {{ 'experience.bebop.date-to' | trans }}</span>
                                 <div class="pt-3 experience__description">
-                                    I worked on this Barcelona-based digital agency as a <b>Backend Web Developer</b><br><br>
-                                    I was involved in several projects focus in the creation of web pages for clients using Drupal
-                                    which is an open source CMS.<br><br>
-                                    <b>Technologies</b><br>
-                                    PHP and SQL (backend)
+                                    {{ 'experience.bebop.position' | trans | raw }}<br><br>
+                                    {{ 'experience.bebop.description' | trans | raw }}<br><br>
+                                    {{ 'experience.bebop.technologies' | trans | raw }}
                                 </div>
                             </div>
                         </div>
@@ -166,19 +144,15 @@
                         <div class="experience__image-lg-div">
                             <img class="experience__image" src="{{ asset('build/images/opendrako.png') }}">
                             <div class="mt-2">
-                                <span class="experience__time">From January 2016<br>To March 2016</span>
+                                <span class="experience__time">{{ 'experience.opendrako.date-from' | trans }}<br>{{ 'experience.opendrako.date-to' | trans | capitalize }}</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-8 d-none d-lg-inline">
                         <div class="pt-3 experience__description">
-                            I worked as an intern in this education-based company while I was studying my Computer Science Degree as a <b>Backend Web Developer</b><br><br>
-                            I created a web application for internal management and I was involved on
-                            the development of new features and code maintenance of its main product,
-                            a web application with educational purposes, using the Symfony framework.<br><br>
-                            <b>Technologies</b><br>
-                            PHP and SQL (backend)<br>
-                            HTML, TWIG and CSS (frontend).
+                            {{ 'experience.opendrako.position' | trans | raw }}<br><br>
+                            {{ 'experience.opendrako.description' | trans | raw }}<br><br>
+                            {{ 'experience.opendrako.technologies' | trans | raw }}
                         </div>
                     </div>
                     <div class="modal fade" id="opendrakomodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -191,15 +165,11 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <span class="experience__time">From January 2016 to March 2016</span>
+                                    <span class="experience__time">{{ 'experience.opendrako.date-from' | trans }} {{ 'experience.opendrako.date-to' | trans }}</span>
                                     <div class="pt-3 experience__description">
-                                        I worked as an intern in this education-based company while I was studying my Computer Science Degree as a <b>Backend Web Developer</b><br><br>
-                                        I created a web application for internal management and I was involved on
-                                        the development of new features and code maintenance of its main product,
-                                        a web application with educational purposes, using the Symfony framework.<br><br>
-                                        <b>Technologies</b><br>
-                                        PHP and SQL (backend)<br>
-                                        HTML, TWIG and CSS (frontend).
+                                        {{ 'experience.opendrako.position' | trans | raw }}<br><br>
+                                        {{ 'experience.opendrako.description' | trans | raw }}<br><br>
+                                        {{ 'experience.opendrako.technologies' | trans | raw }}
                                     </div>
                                 </div>
                             </div>
