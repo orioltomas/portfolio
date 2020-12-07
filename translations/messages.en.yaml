@@ -43,6 +43,7 @@ portfolio:
     title: iOS
     development: Section under development
   project:
+    back: Back
     about: About the project
     details: Project details
     albert-aregall:
