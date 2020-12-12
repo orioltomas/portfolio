@@ -1,40 +1,54 @@
 {% extends 'layout.html.twig' %}
 
+{% set vincleStudioFilters = ['filter-pimcore'] %}
+{% set josepMateuFilters = ['filter-symfony'] %}
+{% set albertAregallFilters = ['filter-pimcore'] %}
+
+{% set allFilters = {
+    'filter-symfony': 'portfolio.filter.symfony'|trans,
+    'filter-pimcore': 'portfolio.filter.pimcore'|trans
+} %}
+
 {% block content %}
 
     <div class="portfolio text-center">
         <h1 class="pb-3 pb-lg-5">{{ 'portfolio.title' | trans | upper }}</h1>
         <div class="col-12">
             <div class="row pt-5 pt-lg-5 pb-lg-5">
-                <div class="col-12 offset-lg-1 col-lg-5">
+                <div class="col-12">
                     <div class="pb-5">
-                        <b>{{ 'portfolio.web-projects' | trans | upper }}</b>
-                    </div>
-                    <div class="pb-5">
-                        <a class="portfolio__project-link" href="{{ path('albert-aregall') }}">
-                            <img class="portfolio__image" src="{{ asset('build/images/aregall_teaser.png') }}">
-                        </a>
-                        <div class="pt-2"><small><i>Albert Aregall Arquitectura</i></small></div>
-                    </div>
-                    <div class="pb-5">
-                        <a class="portfolio__project-link" href="{{ path('josep-mateu') }}">
-                            <img class="portfolio__image" src="{{ asset('build/images/josepmateu_teaser.png') }}">
-                        </a>
-                        <div class="pt-2"><small><i>Josep Mateu</i></small></div>
-                    </div>
-                    <div class="">
-                        <a class="portfolio__project-link" href="{{ path('vincle-studio') }}">
-                            <img class="portfolio__image" src="{{ asset('build/images/vinclestudio_teaser.png') }}">
-                        </a>
-                        <div class="pt-2"><small><i>Vincle Studio</i></small></div>
+                        <b>{{ 'portfolio.projects' | trans | upper }}</b>
                     </div>
                 </div>
-                <div class="col-12 col-lg-5 pb-5">
-                    <div class="pt-5 pt-lg-0 pb-5">
-                        <b>{{ 'portfolio.ios.title' | trans }}</b>
+                <div class="col-12">
+                    <div class="pb-5">
+                        <div class="portfolio__filters">
+                            {% for filter, name in allFilters %}
+                                <div class="portfolio__filter" data-filter="{{ filter }}">{{ name }}</div>
+                            {% endfor %}
+                        </div>
                     </div>
-                    <div class="">
-                        <div><small><i>{{ 'portfolio.ios.development' | trans }}</i></small></div>
+                </div>
+                <div class="col-12 col-lg-10 mx-lg-auto">
+                    <div class="row">
+                        <div class="portfolio__overview-project {{ vincleStudioFilters|join(' ') }}">
+                            <a class="portfolio__project-link" href="{{ path('vincle-studio') }}">
+                                <img class="portfolio__image" src="{{ asset('build/images/vinclestudio_teaser.png') }}">
+                            </a>
+                            <div class="pt-2"><small><i>Vincle Studio</i></small></div>
+                        </div>
+                        <div class="portfolio__overview-project {{ josepMateuFilters|join(' ') }}">
+                            <a class="portfolio__project-link" href="{{ path('josep-mateu') }}">
+                                <img class="portfolio__image" src="{{ asset('build/images/josepmateu_teaser.png') }}">
+                            </a>
+                            <div class="pt-2"><small><i>Josep Mateu</i></small></div>
+                        </div>
+                        <div class="portfolio__overview-project {{ albertAregallFilters|join(' ') }}">
+                            <a class="portfolio__project-link" href="{{ path('albert-aregall') }}">
+                                <img class="portfolio__image" src="{{ asset('build/images/aregall_teaser.png') }}">
+                            </a>
+                            <div class="pt-2"><small><i>Albert Aregall Arquitectura</i></small></div>
+                        </div>
                     </div>
                 </div>
             </div>

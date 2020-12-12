@@ -42,12 +42,12 @@ about-me:
 
 portfolio:
   title: Portfoli
-  web-projects: Projectes web
-  ios:
-    title: iOS
-    development: Secció en desenvolupament
+  projects: Projectes
+  filter:
+    symfony: Symfony
+    pimcore: Pimcore
   project:
-    back: Enrere
+    back: Projectes
     about: Sobre el projecte
     details: Detalls del projecte
     albert-aregall:

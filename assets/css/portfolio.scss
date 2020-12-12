@@ -10,11 +10,39 @@
     }
   }
   &__project-link {
-
     &:hover {
       .portfolio__image {
         box-shadow: 0px 0px 25px #000000a1;
       }
+    }
+  }
+  &__filters {
+    display: inline-flex;
+  }
+  &__filter {
+    font-size: 13px;
+    padding: 5px 7px;
+    border: 1px solid;
+
+    &:not(:first-of-type) {
+      margin-left: 10px;
+    }
+    &:hover, &.selected {
+      cursor: pointer;
+      border-color: #d2ac0f;
+      color: #d2ac0f;
+    }
+  }
+  &__overview-project {
+    padding-bottom: 48px;
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
+    &.hidden {
+      display: none;
     }
   }
   &__project-back-wrapper {
