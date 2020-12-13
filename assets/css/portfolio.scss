@@ -27,7 +27,7 @@
     &:not(:first-of-type) {
       margin-left: 10px;
     }
-    &:hover, &.selected {
+    &.hover, &.selected {
       cursor: pointer;
       border-color: #d2ac0f;
       color: #d2ac0f;
